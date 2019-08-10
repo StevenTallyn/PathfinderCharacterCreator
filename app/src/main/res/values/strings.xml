@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pathfinder Character Creator</string>
+    <string name="title">Pathfinder Character Creator</string>
+    <string name="die_roller_button">Dice Roller</string>
+    <string name="char_creator_button">Create Character</string>
+    <string name="load_char_button">Load Character</string>
+    <string name="roll_result">0</string>
+</resources>
