@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent diceRollerIntent = new Intent(this, DiceRoller.class);
         startActivity(diceRollerIntent);
     }
+
+    public void CharacterSheet(View view){
+        Intent characterSheetIntent = new Intent(this, CharacterSheet.class);
+        startActivity(characterSheetIntent);
+    }
 }

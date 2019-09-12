@@ -11,4 +11,11 @@
     <string name="number_of_4_sided_dice">Number of 4 sided dice</string>
     <string name="number_of_10_sided_dice">Number of 10 sided dice</string>
     <string name="number_of_20_sided_dice">Number of 20 sided dice</string>
+    <string name="indvDiceRolls" />
+    <string name="title_activity_character_sheet">character_sheet</string>
+    <string name="tab_text_1">Overview</string>
+    <string name="tab_text_2">Attributes</string>
+    <string name="tab_text_3">Combat</string>
+    <string name="tab_text_4">Skills</string>
+    <string name="tab_text_5">Spells</string>
 </resources>
