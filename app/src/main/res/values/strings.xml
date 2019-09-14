@@ -12,10 +12,11 @@
     <string name="number_of_10_sided_dice">Number of 10 sided dice</string>
     <string name="number_of_20_sided_dice">Number of 20 sided dice</string>
     <string name="indvDiceRolls" />
-    <string name="title_activity_character_sheet">character_sheet</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_character_sheet">CharacterSheet</string>
     <string name="tab_text_1">Overview</string>
     <string name="tab_text_2">Attributes</string>
-    <string name="tab_text_3">Combat</string>
-    <string name="tab_text_4">Skills</string>
-    <string name="tab_text_5">Spells</string>
 </resources>
