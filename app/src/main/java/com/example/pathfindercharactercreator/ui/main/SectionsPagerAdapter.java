@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.pathfindercharactercreator.FragmentAttributes;
+import com.example.pathfindercharactercreator.FragmentEquipment;
 import com.example.pathfindercharactercreator.FragmentOverview;
 import com.example.pathfindercharactercreator.R;
 
@@ -19,7 +20,7 @@ import com.example.pathfindercharactercreator.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -36,6 +37,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return new FragmentOverview();
             case 1:
                 return new FragmentAttributes();
+            case 2:
+                return new FragmentEquipment();
             default:
                 return null;
         }
@@ -49,7 +52,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 2 total pages.
-        return 2;
+        return 3;
     }
 }

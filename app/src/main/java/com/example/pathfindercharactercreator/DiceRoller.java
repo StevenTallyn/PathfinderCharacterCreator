@@ -11,8 +11,6 @@ import java.util.Random;
 
 public class DiceRoller extends AppCompatActivity {
 
-    private Button update;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

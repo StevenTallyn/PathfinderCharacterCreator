@@ -19,4 +19,5 @@
     <string name="title_activity_character_sheet">CharacterSheet</string>
     <string name="tab_text_1">Overview</string>
     <string name="tab_text_2">Attributes</string>
+    <string name="tab_text_3">Equipment</string>
 </resources>

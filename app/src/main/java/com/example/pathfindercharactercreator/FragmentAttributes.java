@@ -96,12 +96,12 @@ public class FragmentAttributes extends Fragment {
             chaScore = Integer.parseInt(chaScoreString);
         }
 
-        strMod = (strScore - 10)/2;
-        dexMod = (dexScore - 10)/2;
-        conMod = (conScore - 10)/2;
-        intMod = (intScore - 10)/2;
-        wisMod = (wisScore - 10)/2;
-        chaMod = (chaScore - 10)/2;
+        strMod = (strScore)/2-5;
+        dexMod = (dexScore)/2-5;
+        conMod = (conScore)/2-5;
+        intMod = (intScore)/2-5;
+        wisMod = (wisScore)/2-5;
+        chaMod = (chaScore)/2-5;
 
         if (strMod > 0){
             strModTV.setText("+" + strMod.toString());

@@ -229,13 +229,5 @@
                 android:textAlignment="center"
                 android:textSize="24sp" />
         </TableRow>
-    </TableLayout><![CDATA[
-
-
-
-    @+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-]]>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
