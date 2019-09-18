@@ -10,9 +10,11 @@
         android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="12dp"
         android:clickable="true"
+        android:focusable="true"
         android:src="@android:drawable/ic_menu_save" />
 
     <TableLayout
@@ -31,7 +33,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/char_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -51,7 +53,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/race_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -70,7 +72,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/class_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -89,7 +91,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/diety_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -108,7 +110,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/level_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -128,7 +130,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/gender_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -147,7 +149,7 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/bio_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -156,5 +158,14 @@
 
         </TableRow>
     </TableLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_upload" />
 
 </RelativeLayout>

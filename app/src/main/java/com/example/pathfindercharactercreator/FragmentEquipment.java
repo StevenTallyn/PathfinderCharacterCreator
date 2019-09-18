@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,8 +63,10 @@ public class FragmentEquipment extends Fragment {
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String text = list.get(i);
                 adapter.remove(list.get(i));
                 adapter.notifyDataSetChanged();
+                Toast.makeText(getActivity(), "Deleted Equipment: " + text,Toast.LENGTH_LONG).show();
                 return false;
             }
         });
