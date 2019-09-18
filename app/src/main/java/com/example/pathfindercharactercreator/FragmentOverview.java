@@ -36,6 +36,12 @@ public class FragmentOverview extends Fragment {
     EditText levelTV;
     EditText genderTV;
     EditText bioTV;
+    EditText strTV;
+    EditText dexTV;
+    EditText conTV;
+    EditText intTV;
+    EditText wisTV;
+    EditText chaTV;
 
     String myPreferences = "myPref";
     String Name = "nameKey";
@@ -45,6 +51,12 @@ public class FragmentOverview extends Fragment {
     String Level = "levelKey";
     String Gender = "genderKey";
     String Bio = "bioKey";
+    String Str = "strKey";
+    String Dex = "dexKey";
+    String Con = "conKey";
+    String Int = "intKey";
+    String Wis = "wisKey";
+    String Cha = "chaKey";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,6 +76,12 @@ public class FragmentOverview extends Fragment {
                 levelTV = getView().findViewById(R.id.level_text);
                 genderTV = getView().findViewById(R.id.gender_text);
                 bioTV = getView().findViewById(R.id.bio_text);
+                strTV = getActivity().findViewById(R.id.strAttribute);
+                dexTV = getActivity().findViewById(R.id.dexAttribute);
+                conTV = getActivity().findViewById(R.id.conAttribute);
+                intTV = getActivity().findViewById(R.id.intAttribute);
+                wisTV = getActivity().findViewById(R.id.wisAttribute);
+                chaTV = getActivity().findViewById(R.id.chaAttribute);
 
                 String char_name = nameTV.getText().toString();
                 String race = raceTV.getText().toString();
@@ -72,6 +90,12 @@ public class FragmentOverview extends Fragment {
                 String level = levelTV.getText().toString();
                 String gender = genderTV.getText().toString();
                 String bio = bioTV.getText().toString();
+                String str = strTV.getText().toString();
+                String dex = dexTV.getText().toString();
+                String con = conTV.getText().toString();
+                String intel = intTV.getText().toString();
+                String wis = wisTV.getText().toString();
+                String cha = chaTV.getText().toString();
 
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putString(Name, char_name);
@@ -81,6 +105,12 @@ public class FragmentOverview extends Fragment {
                 editor.putString(Level, level);
                 editor.putString(Gender, gender);
                 editor.putString(Bio, bio);
+                editor.putString(Str, str);
+                editor.putString(Dex, dex);
+                editor.putString(Con, con);
+                editor.putString(Int, intel);
+                editor.putString(Wis, wis);
+                editor.putString(Cha, cha);
                 editor.apply();
                 Toast.makeText(getActivity(), "Saved Character",Toast.LENGTH_LONG).show();
             }
@@ -96,6 +126,12 @@ public class FragmentOverview extends Fragment {
                 levelTV = getView().findViewById(R.id.level_text);
                 genderTV = getView().findViewById(R.id.gender_text);
                 bioTV = getView().findViewById(R.id.bio_text);
+                strTV = getActivity().findViewById(R.id.strAttribute);
+                dexTV = getActivity().findViewById(R.id.dexAttribute);
+                conTV = getActivity().findViewById(R.id.conAttribute);
+                intTV = getActivity().findViewById(R.id.intAttribute);
+                wisTV = getActivity().findViewById(R.id.wisAttribute);
+                chaTV = getActivity().findViewById(R.id.chaAttribute);
 
                 if (sp.contains(Name)) {
                     nameTV.setText(sp.getString(Name, ""));
@@ -117,6 +153,24 @@ public class FragmentOverview extends Fragment {
                 }
                 if (sp.contains(Bio)) {
                     bioTV.setText(sp.getString(Bio, ""));
+                }
+                if (sp.contains(Str)){
+                   strTV.setText(sp.getString(Str, ""));
+                }
+                if (sp.contains(Dex)){
+                    dexTV.setText(sp.getString(Dex, ""));
+                }
+                if (sp.contains(Con)){
+                    conTV.setText(sp.getString(Con, ""));
+                }
+                if (sp.contains(Int)){
+                    intTV.setText(sp.getString(Int, ""));
+                }
+                if (sp.contains(Wis)){
+                    wisTV.setText(sp.getString(Wis, ""));
+                }
+                if (sp.contains(Cha)){
+                    chaTV.setText(sp.getString(Cha, ""));
                 }
             }
         });
